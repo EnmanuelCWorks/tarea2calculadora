@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-DO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly>
+        <div class="botones">
+            <button onclick="agregarAPantalla('7')">7</button>
+            <button onclick="agregarAPantalla('8')">8</button>
+            <button onclick="agregarAPantalla('9')">9</button>
+            <button onclick="agregarAPantalla('/')">÷</button>
+            <button onclick="agregarAPantalla('4')">4</button>
+            <button onclick="agregarAPantalla('5')">5</button>
+            <button onclick="agregarAPantalla('6')">6</button>
+            <button onclick="agregarAPantalla('*')">x</button>
+            <button onclick="agregarAPantalla('1')">1</button>
+            <button onclick="agregarAPantalla('2')">2</button>
+            <button onclick="agregarAPantalla('3')">3</button>
+            <button onclick="agregarAPantalla('-')">-</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="agregarAPantalla('0')">0</button>
+            <button onclick="agregarAPantalla('.')">.</button>
+            <button onclick="agregarAPantalla('+')">+</button>
+            <button onclick="borrarUltimoCaracter()">⭅</button>
+            <button onclick="borrarPantalla()">C</button>
+        </div>
+    </div>
+    <div class="historial">
+        <h2>Historial de Operaciones</h2>
+        <ul id="lista-historial"></ul>
+        <button onclick="borrarHistorial()">Limpiar Historial</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
